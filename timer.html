@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.modal-content {
+ 
+  margin: auto;
+  display:none;
+  padding: 20px;
+  box-shadow: 2px 5px #888888;
+  border: 1px solid #888;
+  width: 20%;
+  height:100px;
+  border-radius:10px;
+  background-color: aliceblue;
+  border-top: 2px solid ;
+  border-top-color: blue;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+  <div  id="myModal" class="modal-content">
+    <button id="myBn"  >Yes</button>
+    <button id="mytn" >No</button>
+  </div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+document.getElementById("myBn").addEventListener("click", myFunction);
+document.getElementById("mytn").addEventListener("click", myFunction2);
+function popUp(){
+    modal.style.display = "block"; 
+}
+setTimeout("popUp()", 5000);
+function myFunction(){
+         changeColor('yellow');
+    }  
+    function myFunction2(){
+        changeColor('red');
+    }
+     function changeColor(color) {
+                    document.body.style.background = color;
+                }
+
+
+
+
+</script>
+
+</body>
+</html>
